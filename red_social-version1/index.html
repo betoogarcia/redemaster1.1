@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" class="app">
+   <head>
+      <meta charset="utf-8" />
+      <title>BUAP| SOCIAL</title>
+      <meta name="description" content="app, web app, responsive, admin dashboard, admin, flat, flat ui, ui kit, off screen nav" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+      <!-- <link rel="stylesheet" href="css/bootstrap.css" type="text/css" /> -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <!-- <link rel="stylesheet" href="css/font.css" type="text/css" /> -->
+      <link rel="stylesheet" href="css/app.v1.css" type="text/css" />
+
+      <!--[if lt IE 9]> <script src="js/ie/html5shiv.js"></script> <script src="js/ie/respond.min.js"></script> <script src="js/ie/excanvas.js"></script> <![endif]-->
+   </head>
+   <body class="">
+      <section class="vbox">
+         <header class="bg-dark dk header navbar navbar-fixed-top-xs">
+            <div class="navbar-header aside-md"> <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen,open" data-target="#nav,html"> <i class="fa fa-bars"></i> </a> <a href="#" class="navbar-brand" data-toggle="fullscreen">RedBuap</a> <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".nav-user"> <i class="fa fa-cog"></i> </a> </div>
+            <ul class="nav navbar-nav hidden-xs">
+              
+            </ul>
+         </header>
+         <section>
+            <section class="hbox stretch">
+               <!-- .aside -->
+               <aside class="bg-light lter b-r aside-md hidden-print hidden-xs" id="nav">
+                  <section class="vbox">
+                     <header class="header bg-primary lter text-center clearfix">
+                        <div class="btn-group">
+                           <button type="button" class="btn btn-sm btn-dark btn-icon" title="Iniciar Sesión"><i class="fa fa-plus"></i></button>
+                           <div class="btn-group hidden-nav-xs">
+                              <button type="button" class="btn btn-sm btn-primary dropdown-toggle" data-toggle="dropdown">Iniciar Sesión <span class="caret"></span> </button>
+                              <ul class="dropdown-menu text-left">
+                                 <li><a href="login.html">Iniciar Sesión</a></li>
+                                 <li><a href="registro.html">Registrarse</a></li>
+                                 
+                              </ul>
+                           </div>
+                        </div>
+                     </header>
+                     <section class="w-f scrollable">
+                        <div class="row">
+         <div class="slim-scroll" data-height="auto" data-disable-fade-out="true" data-distance="0" data-size="5px" data-color="#333333">
+            
+               
+               <div class="panel-body">
+                  
+                     <form role="form" action="guardadatosusuario.php" enctype="multipart/form-data" method="POST" name="nuevo_usuario">
+                     
+                        <div class="form-group">
+                           <label>Nombre</label>
+                           <input class="form-control" placeholder="Nombre" name="nombre">
+                        </div>
+
+                        <div class="form-group">
+                           <label>Apellido</label>
+                           <input class="form-control" placeholder="Apellido" name="apellido">
+                        </div>
+
+                        <div class="form-group">
+                           <label>Usuario</label>
+                           <input class="form-control" placeholder="Usuario" name="usuario">
+                        </div>
+
+                        <div class="form-group">
+                           <label>Password</label>
+                           <input type="password" class="form-control" name="passwd">
+                        </div>
+
+                     
+                           
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="reset" class="btn btn-danger">Cancelar</button>
+                   
+                  </form>
+               </div>
+               <div>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="images/buap.png" style="width:60%;" >
+               </div>
+         </div><!-- /.col-->
+          
+      </div><!-- /.row -->
+                     
+                    
+                  </section>
+               </aside>
+               <!-- /.aside -->
+               <section id="content">
+                  <section class="hbox stretch">
+                     
+                     <aside>
+                        <section class="vbox">
+                           <header class="header bg-white b-b clearfix">
+                              <div class="row m-t-sm">
+                                 <div class="col-sm-8 m-b-xs">
+                                    <a href="#subNav" data-toggle="class:hide" class="btn btn-sm btn-default active"><i class="fa fa-caret-right text fa-lg"></i><i class="fa fa-caret-left text-active fa-lg"></i></a>
+                                    <div class="btn-group">
+                                       <button type="button" class="btn btn-sm btn-default" title="Refresh"><i class="fa fa-refresh"></i></button> <button type="button" class="btn btn-sm btn-default" title="Remove"><i class="fa fa-trash-o"></i></button> <button type="button" class="btn btn-sm btn-default" title="Filter" data-toggle="dropdown"><i class="fa fa-filter"></i> <span class="caret"></span></button>
+                                       <ul class="dropdown-menu">
+                                          <li><a href="#">Action</a></li>
+                                          <li><a href="#">Another action</a></li>
+                                          <li><a href="#">Something else here</a></li>
+                                          <li class="divider"></li>
+                                          <li><a href="#">Separated link</a></li>
+                                       </ul>
+                                    </div>
+                                    <a href="modal.html" data-toggle="ajaxModal" class="btn btn-sm btn-default"><i class="fa fa-plus"></i> Create</a>
+                                 </div>
+                                 <div class="col-sm-4 m-b-xs">
+                                    <div class="input-group"> <input type="text" class="input-sm form-control" placeholder="Search"> <span class="input-group-btn"> <button class="btn btn-sm btn-default" type="button">Go!</button> </span> </div>
+                                 </div>
+                              </div>
+                           </header>
+                           <section class="scrollable wrapper w-f">
+                              <section class="panel panel-default">
+                                 <div class="table-responsive">
+                                    <table class="table table-striped m-b-none">
+                                       <thead>
+                                          <tr>
+                                             <th width="20"><input type="checkbox"></th>
+                                             <th width="20"></th>
+                                             <th class="th-sortable" data-toggle="class">Project <span class="th-sort"> <i class="fa fa-sort-down text"></i> <i class="fa fa-sort-up text-active"></i> <i class="fa fa-sort"></i> </span> </th>
+                                             <th>Task</th>
+                                             <th>Date</th>
+                                             <th width="30"></th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          <tr>
+                                             <td><input type="checkbox" name="post[]" value="2"></td>
+                                             <td><a href="#modal" data-toggle="modal"><i class="fa fa-search-plus"></i></a></td>
+                                             <td>Idrawfast</td>
+                                             <td>4c</td>
+                                             <td>Jul 25, 2013</td>
+                                             <td> <a href="#" class="active" data-toggle="class"><i class="fa fa-check text-success text-active"></i><i class="fa fa-times text-danger text"></i></a> </td>
+                                          </tr>
+                                          <tr>
+                                             <td><input type="checkbox" name="post[]" value="3"></td>
+                                             <td><a href="#modal" data-toggle="modal"><i class="fa fa-search-plus"></i></a></td>
+                                             <td>Formasa</td>
+                                             <td>8c</td>
+                                             <td>Jul 22, 2013</td>
+                                             <td> <a href="#" data-toggle="class"><i class="fa fa-check text-success text-active"></i><i class="fa fa-times text-danger text"></i></a> </td>
+                                          </tr>
+                                          <tr>
+                                             <td><input type="checkbox" name="post[]" value="4"></td>
+                                             <td><a href="#modal" data-toggle="modal"><i class="fa fa-search-plus"></i></a></td>
+                                             <td>Avatar system</td>
+                                             <td>15c</td>
+                                             <td>Jul 15, 2013</td>
+                                             <td> <a href="#" class="active" data-toggle="class"><i class="fa fa-check text-success text-active"></i><i class="fa fa-times text-danger text"></i></a> </td>
+                                          </tr>
+                                          <tr>
+                                             <td><input type="checkbox" name="post[]" value="4"></td>
+                                             <td><a href="#modal" data-toggle="modal"><i class="fa fa-search-plus"></i></a></td>
+                                             <td>Throwdown</td>
+                                             <td>4c</td>
+                                             <td>Jul 11, 2013</td>
+                                             <td> <a href="#" class="active" data-toggle="class"><i class="fa fa-check text-success text-active"></i><i class="fa fa-times text-danger text"></i></a> </td>
+                                          </tr>
+                                          <tr>
+                                             <td><input type="checkbox" name="post[]" value="5"></td>
+                                             <td><a href="#modal" data-toggle="modal"><i class="fa fa-search-plus"></i></a></td>
+                                             <td>Idrawfast</td>
+                                             <td>4c</td>
+                                             <td>Jul 7, 2013</td>
+                                             <td> <a href="#" class="active" data-toggle="class"><i class="fa fa-check text-success text-active"></i><i class="fa fa-times text-danger text"></i></a> </td>
+                                          </tr>
+                                          <tr>
+                                             <td><input type="checkbox" name="post[]" value="6"></td>
+                                             <td><a href="#modal" data-toggle="modal"><i class="fa fa-search-plus"></i></a></td>
+                                             <td>Formasa</td>
+                                             <td>8c</td>
+                                             <td>Jul 3, 2013</td>
+                                             <td> <a href="#" class="active" data-toggle="class"><i class="fa fa-check text-success text-active"></i><i class="fa fa-times text-danger text"></i></a> </td>
+                                          </tr>
+                                          <tr>
+                                             <td><input type="checkbox" name="post[]" value="7"></td>
+                                             <td><a href="#modal" data-toggle="modal"><i class="fa fa-search-plus"></i></a></td>
+                                             <td>Avatar system </b></td>
+                                             <td>15c</td>
+                                             <td>Jul 2, 2013</td>
+                                             <td> <a href="#" class="active" data-toggle="class"><i class="fa fa-check text-success text-active"></i><i class="fa fa-times text-danger text"></i></a> </td>
+                                          </tr>
+                                          <tr>
+                                             <td><input type="checkbox" name="post[]" value="8"></td>
+                                             <td><a href="#modal" data-toggle="modal"><i class="fa fa-search-plus"></i></a></td>
+                                             <td>Videodown</td>
+                                             <td>4c</td>
+                                             <td>Jul 1, 2013</td>
+                                             <td> <a href="#" class="active" data-toggle="class"><i class="fa fa-check text-success text-active"></i><i class="fa fa-times text-danger text"></i></a> </td>
+                                          </tr>
+                                          <tr>
+                                             <td><input type="checkbox" name="post[]" value="4"></td>
+                                             <td><a href="#modal" data-toggle="modal"><i class="fa fa-search-plus"></i></a></td>
+                                             <td>Throwdown</td>
+                                             <td>4c</td>
+                                             <td>Jul 11, 2013</td>
+                                             <td> <a href="#" class="active" data-toggle="class"><i class="fa fa-check text-success text-active"></i><i class="fa fa-times text-danger text"></i></a> </td>
+                                          </tr>
+                                          <tr>
+                                             <td><input type="checkbox" name="post[]" value="5"></td>
+                                             <td><a href="#modal" data-toggle="modal"><i class="fa fa-search-plus"></i></a></td>
+                                             <td>Idrawfast</td>
+                                             <td>4c</td>
+                                             <td>Jul 7, 2013</td>
+                                             <td> <a href="#" class="active" data-toggle="class"><i class="fa fa-check text-success text-active"></i><i class="fa fa-times text-danger text"></i></a> </td>
+                                          </tr>
+                                          <tr>
+                                             <td><input type="checkbox" name="post[]" value="6"></td>
+                                             <td><a href="#modal" data-toggle="modal"><i class="fa fa-search-plus"></i></a></td>
+                                             <td>Formasa</td>
+                                             <td>8c</td>
+                                             <td>Jul 3, 2013</td>
+                                             <td> <a href="#" class="active" data-toggle="class"><i class="fa fa-check text-success text-active"></i><i class="fa fa-times text-danger text"></i></a> </td>
+                                          </tr>
+                                          <tr>
+                                             <td><input type="checkbox" name="post[]" value="7"></td>
+                                             <td><a href="#modal" data-toggle="modal"><i class="fa fa-search-plus"></i></a></td>
+                                             <td>Avatar system </b></td>
+                                             <td>15c</td>
+                                             <td>Jul 2, 2013</td>
+                                             <td> <a href="#" class="active" data-toggle="class"><i class="fa fa-check text-success text-active"></i><i class="fa fa-times text-danger text"></i></a> </td>
+                                          </tr>
+                                       
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </section>
+                           </section>
+                          
+                        </section>
+                     </aside>
+                  </section>
+                  <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen, open" data-target="#nav,html"></a>
+               </section>
+               <aside class="bg-light lter b-l aside-md hide" id="notes">
+                  <div class="wrapper">Notification</div>
+               </aside>
+            </section>
+         </section>
+      </section>
+      <!-- Bootstrap --> <!-- App --> <script src="js/app.v1.js"></script>
+     
+            <!-- /.modal-content -->
+         </div>
+         <!-- /.modal-dialog -->
+      </div>
+      <script src="js/app.plugin.js"></script>
+   </body>
+</html>
